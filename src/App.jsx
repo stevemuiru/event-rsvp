@@ -1,6 +1,6 @@
-const { useState } = React;
+import React, { useState } from 'react';
 
-export function EventRSVPform () {
+export default function EventRSVPform () {
 
   const [text, setText] = useState('')
   const [email, setEmail] = useState('')
