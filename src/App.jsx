@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './index.css';
 
 export default function EventRSVPform () {
 
@@ -20,33 +21,52 @@ export default function EventRSVPform () {
     <form onSubmit={handleChange}>
       
       <label htmlFor="name">Name:</label>
+      <br />
      <input type="text" 
      onChange = {(e) => setText(e.target.value)} 
      placeholder="Your name"
      required/>
+
+     <br />
+     <br />
      
      <label htmlFor="email">Email:</label>
+     <br />
      <input type="email" 
      onChange = {(e) => setEmail(e.target.value)}
      placeholder="Your email"
       required/>
 
+      <br />
+      <br />
+
      <label htmlFor="number">Number of attendes:</label> 
+     <br />
      <input type="number"
      onChange = {(e) => setNumber(e.target.value)} 
      placeholder="Number of attendes"
       required/>
 
+      <br/>
+      <br />
+
       <label htmlFor="diet">Dietary Preferences:</label>
+      <br />
       <input type="text" 
       onChange={(e) => setDiet(e.target.value)}
       placeholder="Dietary Preferences (optional)" />
+
+      <br />
+      <br />
       
       <p>Bringing additional guests?</p>
      <input type="checkbox"
      checked={checkbox}
      onChange = {(e) => setCheckbox(e.target.checked)}
       required/>
+
+      <br />
+      <br />
 
       <button type="submit">Submit RSVP</button>
     </form>

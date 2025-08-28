@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+  
+  form{
+    height: 350px;
+    width: 250px;
+    border-radius: 6px;
+    background-color: oklch(98.6% 0.031 120.757);
+    padding: 2rem;
+    border: 2px solid black;
+  }
+  
+  button{
+    width: 200px;
+    height: 30px;
+    color: oklch(97.7% 0.013 236.62);
+    border: none;
+    background-color: oklch(48.8% 0.243 264.376);
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  input{
+    border : 0;
+  }
