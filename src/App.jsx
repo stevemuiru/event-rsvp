@@ -19,6 +19,8 @@ export default function EventRSVPform () {
     <>
 
     <form onSubmit={handleChange}>
+
+      <h1>Event Rsvp Form</h1>
       
       <label htmlFor="name">Name:</label>
       <br />
